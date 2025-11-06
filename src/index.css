@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base theming: light by default, dark when <html class="dark"> */
+@layer base {
+  html {
+    @apply bg-white text-slate-900 font-sans;
+  }
+  html.dark {
+    @apply bg-dark text-light;
+  }
+  a {
+    @apply underline-offset-4 decoration-transparent hover:decoration-neon transition;
+  }
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold
+           bg-neon text-dark shadow-neon hover:brightness-110 transition;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3
+           border border-neon text-neon hover:bg-neon hover:text-dark transition;
+  }
+}
