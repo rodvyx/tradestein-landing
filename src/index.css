@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Smooth theme switch transition */
+html.theme-transition,
+html.theme-transition * {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
 /* Base theming: light by default, dark when <html class="dark"> */
 @layer base {
   html {

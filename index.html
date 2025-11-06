@@ -2,11 +2,50 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>tradestein-landing</title>
+    <title>Tradestein — The Modern Trading Journal</title>
+
+    <!-- ✅ Custom Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- ✅ Preload correct theme before React mounts -->
+    <script>
+      try {
+        const theme = localStorage.getItem("theme");
+        if (
+          theme === "dark" ||
+          (!theme && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      } catch (e) {
+        console.error("Theme detection failed", e);
+      }
+    </script>
+
+    <!-- ✅ SEO & Social Meta -->
+    <meta
+      name="description"
+      content="Tradestein helps traders journal, analyze, and improve performance — built by traders, for traders."
+    />
+    <meta
+      name="keywords"
+      content="Tradestein, trading journal, analytics, goals, trading psychology, trader tools, performance tracking"
+    />
+    <meta property="og:title" content="Tradestein — The Modern Trading Journal" />
+    <meta
+      property="og:description"
+      content="Master your trading psychology and track your performance with Tradestein — built for traders who want to grow with data."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tradestein.world" />
+    <meta property="og:image" content="/favicon.png" />
+    <meta name="theme-color" content="#00f0b5" />
   </head>
-  <body>
+
+  <body class="bg-white dark:bg-black transition-colors duration-300">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

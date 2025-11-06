@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom"; // ✅ Import React Router Link
 
 export default function Hero() {
   return (
@@ -18,7 +19,9 @@ export default function Hero() {
         >
           Master Your Trading Psychology,{" "}
           <br className="hidden sm:block" />
-          <span className="text-neon drop-shadow">One Journal Entry at a Time.</span>
+          <span className="text-neon drop-shadow">
+            One Journal Entry at a Time.
+          </span>
         </motion.h1>
 
         <motion.p
@@ -43,9 +46,11 @@ export default function Hero() {
           >
             Launch App <ArrowRight className="ml-2" size={18} />
           </a>
-          <a href="/pricing" className="btn-ghost no-underline">
+
+          {/* ✅ FIXED: use React Router Link for internal page navigation */}
+          <Link to="/pricing" className="btn-ghost no-underline">
             View Pricing
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

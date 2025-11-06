@@ -2,23 +2,30 @@ import { useEffect, useState } from "react";
 import { Sun, Moon } from "lucide-react";
 
 export default function ThemeToggle({ className = "" }) {
-  const [isDark, setIsDark] = useState(true);
-
-  // Load preference
-  useEffect(() => {
+  // Start undefined so it doesn't assume dark until localStorage is checked
+  const [isDark, setIsDark] = useState(() => {
     const stored = localStorage.getItem("theme");
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initial = stored ? stored === "dark" : prefersDark;
-    document.documentElement.classList.toggle("dark", initial);
-    setIsDark(initial);
-  }, []);
+    if (stored) return stored === "dark";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  });
 
-  const toggle = () => {
-    const next = !isDark;
-    setIsDark(next);
-    document.documentElement.classList.toggle("dark", next);
-    localStorage.setItem("theme", next ? "dark" : "light");
-  };
+  // Sync theme class when the state changes
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", isDark);
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  }, [isDark]);
+
+  // Smooth fade animation between themes
+  useEffect(() => {
+    document.documentElement.classList.add("theme-transition");
+    const timeout = setTimeout(
+      () => document.documentElement.classList.remove("theme-transition"),
+      300
+    );
+    return () => clearTimeout(timeout);
+  }, [isDark]);
+
+  const toggle = () => setIsDark((prev) => !prev);
 
   return (
     <button
