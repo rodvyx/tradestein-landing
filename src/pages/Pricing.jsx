@@ -28,7 +28,7 @@ export default function Pricing() {
           </p>
 
           <a
-            href="https://app.tradestein.world"
+            href="https://tradesteinjournal.lemonsqueezy.com/buy/02b4c1c2-1b97-4bbd-b28a-b1daf6e7ca92"
             className="btn-primary no-underline"
           >
             Subscribe Now
@@ -57,12 +57,12 @@ export default function Pricing() {
       <div className="text-center mt-16 text-sm text-gray-500 dark:text-gray-400">
         <p>
           All payments are processed securely through{" "}
-          <span className="text-neon font-medium">Paddle</span>.
+          <span className="text-neon font-medium">Paddle, Lemonsqueezy, Stripe</span>.
         </p>
         <p>
           For questions, contact{" "}
           <a
-            href="mailto:rodrickrob11@gmail.com"
+            href="mailto:tradesteinjournal@gmail.com"
             className="hover:text-neon transition"
           >
             tradesteinjournal@gmail.com

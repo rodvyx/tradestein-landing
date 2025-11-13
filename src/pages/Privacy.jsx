@@ -55,7 +55,7 @@ export default function Privacy() {
             </li>
             <li>
               <strong>Payment Information:</strong> Processed securely by{" "}
-              <strong>Paddle.com</strong>. We never store your credit card or
+              <strong>Paddle.com, Lemonsqueezy.com</strong>. We never store your credit card or
               payment details.
             </li>
           </ul>
@@ -82,7 +82,7 @@ export default function Privacy() {
           </h2>
           <p>
             All payments are securely processed through{" "}
-            <strong>Paddle.com Market Ltd</strong>, which acts as our merchant
+            <strong>Paddle.com Market Ltd, Lemonsqueezy.com Market Ltd</strong>, which acts as our merchant
             of record. Paddle handles all credit card information and complies
             with international PCI-DSS standards. Tradestein never directly
             stores your financial information.
@@ -174,7 +174,7 @@ export default function Privacy() {
               tradesteinjournal@gmail.com
             </a>
           </p>
-          <p>🌍 Tradestein</p>
+          <p>🌍 Tradesteinjournal</p>
         </section>
 
         <footer className="pt-10 text-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800">

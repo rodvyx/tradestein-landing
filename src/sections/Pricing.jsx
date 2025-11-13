@@ -40,11 +40,11 @@ export default function Pricing() {
           $4.99 <span className="text-base font-medium">/month</span>
         </div>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-8">
-          Billed monthly via Paddle. No free trial.
+          Billed monthly via Paddle, Lemonsqueezy. No free trial.
         </p>
 
         <a
-          href="https://app.tradestein.world"
+          href="https://tradesteinjournal.lemonsqueezy.com/buy/02b4c1c2-1b97-4bbd-b28a-b1daf6e7ca92"
           className="btn-primary no-underline inline-flex items-center justify-center"
         >
           Subscribe Now
@@ -53,7 +53,7 @@ export default function Pricing() {
 
       <p className="text-sm text-gray-500 dark:text-gray-400 mt-10">
         All payments are processed securely through{" "}
-        <span className="text-neon font-medium">Paddle</span>.
+        <span className="text-neon font-medium">Paddle, Lemonsqueezy</span>.
       </p>
     </section>
   );

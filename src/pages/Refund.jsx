@@ -43,7 +43,7 @@ export default function Refund() {
           <p>
             Tradestein operates on a monthly subscription model at{" "}
             <strong>$4.99 USD per month</strong>, billed securely via{" "}
-            <strong>Paddle.com Market Ltd</strong> — our authorized payment
+            <strong>Paddle.com Market Ltd, Lemonsqueezy.com Market Ltd</strong> — our authorized payment
             processor and Merchant of Record.
           </p>
           <p className="mt-2">
@@ -88,18 +88,18 @@ export default function Refund() {
             >
               tradesteinjournal@gmail.com
             </a>
-            . Please include your payment reference or receipt from Paddle to
+            . Please include your payment reference or receipt from Paddle or Lemonsqueezy to
             help us locate your order quickly.
           </p>
         </section>
 
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            4. Paddle’s Role
+            4. Paddle’s / Lemonsqueezy Role
           </h2>
           <p>
             All transactions are processed by{" "}
-            <strong>Paddle.com Market Ltd</strong>, which acts as the Merchant
+            <strong>Paddle.com Market Ltd, Lemonsqueezy Market Ltd</strong>, which acts as the Merchant
             of Record for Tradestein. Paddle handles tax compliance, invoicing,
             and refund issuance on our behalf. If approved, refunds are
             processed directly through Paddle and returned to your original
@@ -113,7 +113,7 @@ export default function Refund() {
           </h2>
           <p>
             You can cancel your subscription anytime from your Tradestein
-            account or via Paddle’s customer portal. Your subscription will
+            account or via Lemonsqueezy or Paddle’s customer portal. Your subscription will
             remain active until the end of your current billing period. You will
             not be charged again unless you reactivate your plan.
           </p>
