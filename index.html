@@ -2,20 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Tradestein — Free Trading Journal for Psychology & Performance</title>
 
-    <!-- 🔥 SEO Title -->
-    <title>Tradestein — Journal, Analyze & Grow as a Trader</title>
-
-    <!-- 🔥 Favicon + Icons -->
+    <!-- ✅ Favicon & PWA icons -->
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#020617" />
 
-    <!-- 🔥 PWA Manifest -->
-    <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#000000" />
-
-    <!-- 🔥 Preload Theme BEFORE React renders -->
+    <!-- ✅ Preload correct theme before React mounts -->
     <script>
       try {
         const theme = localStorage.getItem("theme");
@@ -32,34 +31,70 @@
       }
     </script>
 
-    <!-- 🔥 SEO Meta -->
+    <!-- ✅ Primary SEO -->
     <meta
       name="description"
-      content="Tradestein — the modern trading journal built to improve your psychology, track your trades, and level up your discipline with analytics, goals & monthly reflections."
+      content="Tradestein is a free trading journal that helps you master your psychology, track trades, analyze performance, and build the mindset of a consistent trader."
     />
     <meta
       name="keywords"
-      content="Tradestein, trading journal, trading psychology, trading analytics, forex journal, day trading, performance tracking, trader mindset"
+      content="trading journal, free trading journal, trading psychology, trading mindset, Tradestein, trading analytics, forex journal, stock trading journal, crypto journal"
     />
+    <meta name="author" content="Tradestein" />
 
-    <!-- 🔥 OpenGraph (Facebook, Instagram, LinkedIn) -->
-    <meta property="og:title" content="Tradestein — Become a Better Trader" />
+    <!-- ✅ Open Graph (for WhatsApp, Discord, etc.) -->
+    <meta
+      property="og:title"
+      content="Tradestein — Free Trading Journal for Psychology & Performance"
+    />
     <meta
       property="og:description"
-      content="Journal your trades, analyze your performance, and grow your trader mindset with Tradestein — built by traders, for traders."
+      content="Document your trades, track emotions, study win rate and R:R, and build a consistent trader mindset. Free forever — no subscriptions."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://tradestein.world" />
-    <meta property="og:image" content="/favicon.png" />
+    <!-- You can swap this to a real preview image later -->
+    <meta property="og:image" content="/social-preview.png" />
 
-    <!-- 🔥 Twitter / X Card -->
+    <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Tradestein — Master Your Trading Psychology" />
-    <meta name="twitter:image" content="/favicon.png" />
+    <meta
+      name="twitter:title"
+      content="Tradestein — Free Trading Journal for Psychology & Performance"
+    />
+    <meta
+      name="twitter:description"
+      content="Built by traders, for traders. Journal 2.0, psychology tracking, analytics dashboard, and more — completely free."
+    />
+    <meta name="twitter:image" content="/social-preview.png" />
 
-    <!-- Mobile Web App Settings -->
+    <!-- ✅ App name hints -->
+    <meta name="application-name" content="Tradestein" />
+    <meta name="apple-mobile-web-app-title" content="Tradestein" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- ✅ JSON-LD: Web Application schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Tradestein",
+        "url": "https://tradestein.world",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Any",
+        "description": "Tradestein is a free trading journal focused on psychology, trade tracking, and performance analytics for traders.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "creator": {
+          "@type": "Organization",
+          "name": "Tradestein"
+        }
+      }
+    </script>
   </head>
 
   <body class="bg-white dark:bg-black transition-colors duration-300">
