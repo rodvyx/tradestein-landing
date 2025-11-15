@@ -4,189 +4,182 @@ export default function Terms() {
   return (
     <div className="min-h-screen bg-white text-gray-800 dark:bg-black dark:text-gray-100 transition-colors duration-300 px-6 py-16">
       <div className="max-w-4xl mx-auto space-y-6">
+
         <h1 className="text-4xl font-bold text-emerald-500 mb-4">
           Terms of Service
         </h1>
+
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          Effective Date: November 2025
+          Last Updated: November 2025
         </p>
+
         <p>
-          Welcome to <strong>Tradestein</strong> — a subscription-based trading
-          journal platform designed to help traders track performance, analyze
-          psychology, and build discipline. By using our website (
+          These Terms of Service (“Terms”) govern your use of 
+          <strong> Tradestein</strong> — a free psychology-focused trading 
+          journal available at 
           <a
             href="https://tradestein.world"
             target="_blank"
             rel="noreferrer"
             className="text-emerald-500 hover:underline"
           >
-            tradestein.world
+            {" "}tradestein.world{" "}
           </a>
-          ) or the Tradestein app (
+          and 
           <a
             href="https://app.tradestein.world"
             target="_blank"
             rel="noreferrer"
             className="text-emerald-500 hover:underline"
           >
-            app.tradestein.world
-          </a>
-          ), you agree to these Terms of Service.
+            {" "}app.tradestein.world
+          </a>.
+          By using Tradestein, you agree to these Terms and our Privacy Policy.
         </p>
 
+        {/* 1. Use of Service */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            1. Acceptance of Terms
+            1. Use of the Service
           </h2>
           <p>
-            By accessing or using Tradestein, you agree to these Terms and our
-            Privacy Policy. If you do not agree, please discontinue use of our
-            services.
+            Tradestein provides digital tools that help traders journal their trades,
+            analyze performance, track psychology, and stay disciplined.  
+            The app is completely free and does not require any payment.
           </p>
         </section>
 
+        {/* 2. Eligibility */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            2. Service Description
-          </h2>
-          <p>
-            Tradestein provides digital journaling and analytics tools for
-            traders. The service is available through a monthly subscription at{" "}
-            <strong>$4.99 USD per month</strong>, billed via{" "}
-            <strong>Paddle</strong>, our authorized reseller and payment
-            processor. There is no free trial — all features require an active
-            subscription.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            3. Account Registration
+            2. Account Requirements
           </h2>
           <ul className="list-disc ml-6 space-y-1">
-            <li>Be at least 18 years old.</li>
-            <li>Provide accurate and current information during sign-up.</li>
-            <li>Keep your login credentials confidential.</li>
+            <li>You must be at least 18 years old.</li>
+            <li>You must provide a valid email address.</li>
+            <li>You are responsible for keeping your login credentials secure.</li>
           </ul>
+        </section>
+
+        {/* 3. User Content */}
+        <section>
+          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
+            3. User Content & Trade Data
+          </h2>
           <p>
-            Tradestein is not responsible for losses resulting from unauthorized
-            access to your account.
+            You retain full ownership of the content you upload, including:
+          </p>
+          <ul className="list-disc ml-6 space-y-1 mt-2">
+            <li>Trade notes & journal entries</li>
+            <li>Performance data</li>
+            <li>Psychology notes & emotions</li>
+            <li>Screenshots & images</li>
+          </ul>
+          <p className="mt-2">
+            By using the app, you grant Tradestein permission to store this data
+            securely so it can be displayed to you inside the platform.
+          </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            We do not sell or share your data with third parties.
           </p>
         </section>
 
+        {/* 4. Free Service + Donations */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            4. Payments & Billing
+            4. Free Service & Voluntary Support
           </h2>
           <p>
-            All payments are securely processed by{" "}
-            <strong>Paddle.com Market Ltd</strong>, which acts as the Merchant of
-            Record. By subscribing, you authorize Paddle to charge your payment
-            method monthly until cancellation.
-          </p>
-          <p>
-            You can manage or cancel your subscription anytime through your
-            Tradestein account or via Paddle’s customer portal.
+            Tradestein is 100% free.  
+            Users may optionally support development through Buy Me a Coffee.
+            Donations are voluntary and do not provide special access.
           </p>
         </section>
 
+        {/* 5. Acceptable Use */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            5. Cancellations
+            5. Acceptable Use
           </h2>
-          <p>
-            You can cancel anytime. Your subscription remains active until the
-            end of the billing cycle. Cancellations take effect at the end of
-            the current paid month — no prorated refunds are offered.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            6. Refunds
-          </h2>
-          <p>
-            Refunds are handled according to our{" "}
-            <a
-              href="https://tradestein.world/refund"
-              className="text-emerald-500 hover:underline"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Refund Policy
-            </a>
-            . Refunds are only granted for duplicate payments or technical
-            issues that prevent access to the service.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            7. Acceptable Use
-          </h2>
-          <p>You agree not to misuse Tradestein. Specifically, you may not:</p>
+          <p>You agree not to:</p>
           <ul className="list-disc ml-6 space-y-1">
-            <li>Share accounts or login credentials.</li>
-            <li>Reverse-engineer, copy, or resell the platform.</li>
-            <li>Use the app for illegal, abusive, or misleading purposes.</li>
+            <li>Share your account with others.</li>
+            <li>Upload harmful, illegal, or abusive content.</li>
+            <li>Attempt to reverse-engineer or exploit the platform.</li>
           </ul>
-          <p>
-            Violations may result in suspension or termination of your account.
+          <p className="mt-2">
+            Violations may result in account suspension.
           </p>
         </section>
 
+        {/* 6. AI Features */}
+        <section>
+          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
+            6. Future AI Features
+          </h2>
+          <p>
+            Tradestein may introduce optional AI-powered insights or mindset tools.
+            AI features will analyze your trade data only to provide journal
+            improvements, emotional awareness, or discipline feedback.
+          </p>
+          <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
+            AI features will never be used to sell your data or create user profiles
+            outside the Tradestein ecosystem.
+          </p>
+        </section>
+
+        {/* 7. No Financial Advice */}
+        <section>
+          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
+            7. No Financial Advice
+          </h2>
+          <p>
+            Tradestein does not provide trading signals, financial advice,
+            or investment recommendations.  
+            Your trading decisions are your responsibility.
+          </p>
+        </section>
+
+        {/* 8. Service Availability */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
             8. Service Availability
           </h2>
           <p>
-            While we aim for reliability, Tradestein may experience downtime due
-            to maintenance or updates. We’re not liable for interruptions caused
-            by third-party providers or unforeseen issues.
+            We aim to keep Tradestein stable and reliable, but occasional downtime
+            may occur due to maintenance, updates, or technical issues.
           </p>
         </section>
 
+        {/* 9. Limitation of Liability */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            9. Disclaimer
+            9. Limitation of Liability
           </h2>
           <p>
-            Tradestein is provided “as is.” We do not guarantee financial
-            improvement or any specific results. Users are solely responsible
-            for their own trading actions.
+            Tradestein is provided “as is.”  
+            We are not responsible for financial losses, lost trades, or outcomes
+            related to your personal trading decisions.
           </p>
         </section>
 
+        {/* 10. Changes */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            10. Limitation of Liability
+            10. Changes to These Terms
           </h2>
           <p>
-            To the fullest extent permitted by law, Tradestein and its
-            developers shall not be liable for any indirect or consequential
-            damages arising from the use of this service.
+            We may update these Terms from time to time.  
+            Continued use of Tradestein means you agree to the updated version.
           </p>
         </section>
 
+        {/* 11. Contact */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            11. Changes to Terms
+            11. Contact Us
           </h2>
-          <p>
-            We may update these Terms periodically. Updates will be reflected on
-            this page with a revised “Last Updated” date. Continued use of
-            Tradestein after updates means you accept the changes.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            12. Contact Information
-          </h2>
-          <p>
-            For any questions regarding these Terms or your subscription,
-            contact us at:
-          </p>
+          <p>For questions or concerns:</p>
           <p className="mt-2">
             📧{" "}
             <a
@@ -196,12 +189,12 @@ export default function Terms() {
               tradesteinjournal@gmail.com
             </a>
           </p>
-          <p>🌍 Tradestein, Ukraine</p>
         </section>
 
         <footer className="pt-10 text-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800">
-          © 2025 Tradesteinjournal. All rights reserved.
+          © 2025 Tradestein. All rights reserved.
         </footer>
+
       </div>
     </div>
   );

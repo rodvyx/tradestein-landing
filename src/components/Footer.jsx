@@ -4,6 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-neon/20">
       <div className="mx-auto max-w-6xl px-4 py-10 grid gap-6 sm:grid-cols-2 md:grid-cols-4">
+        
         {/* Brand Section */}
         <div>
           <div className="flex items-center gap-2 mb-2">
@@ -11,7 +12,7 @@ export default function Footer() {
             <span className="font-semibold">Tradestein</span>
           </div>
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            The modern trading journal built for consistency, discipline,
+            The modern trading journal built for discipline, consistency,
             and performance improvement.
           </p>
         </div>
@@ -29,13 +30,13 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <Link to="/pricing" className="hover:text-neon transition">
-                Pricing
+              <Link to="/" className="hover:text-neon transition">
+                Features
               </Link>
             </li>
             <li>
-              <Link to="/" className="hover:text-neon transition">
-                Features
+              <Link to="/guide" className="hover:text-neon transition">
+                How to Use Tradestein
               </Link>
             </li>
           </ul>
@@ -47,17 +48,12 @@ export default function Footer() {
           <ul className="space-y-1 text-sm">
             <li>
               <Link to="/terms" className="hover:text-neon transition">
-                Terms of Service
+                Terms of Use
               </Link>
             </li>
             <li>
               <Link to="/privacy" className="hover:text-neon transition">
                 Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link to="/refund" className="hover:text-neon transition">
-                Refund Policy
               </Link>
             </li>
           </ul>
@@ -85,16 +81,19 @@ export default function Footer() {
             </li>
           </ul>
         </div>
+
       </div>
 
+      {/* Bottom Bar */}
       <div className="border-t border-neon/10">
         <div className="mx-auto max-w-6xl px-4 py-4 text-xs text-gray-500 dark:text-gray-400 flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
           <span>
-            © {new Date().getFullYear()} Tradesteinjournal. All rights reserved.
+            © {new Date().getFullYear()} Tradestein. All rights reserved.
           </span>
-          <span> • Empowering Traders Worldwide 🌍</span>
+          <span>• Empowering Traders Worldwide 🌍</span>
         </div>
       </div>
+
     </footer>
   );
 }

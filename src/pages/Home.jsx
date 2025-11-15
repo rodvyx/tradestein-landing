@@ -1,13 +1,13 @@
 import Hero from "../sections/Hero.jsx";
 import Features from "../sections/Features.jsx";
-import Pricing from "../sections/Pricing.jsx";
+import Mindset from "../sections/Mindset.jsx"; // NEW — replaces Pricing.jsx
 
 export default function Home() {
   return (
     <>
       <Hero />
       <Features />
-      <Pricing />
+      <Mindset />   {/* ← New section */}
     </>
   );
 }

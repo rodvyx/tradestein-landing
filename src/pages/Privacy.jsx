@@ -4,181 +4,195 @@ export default function Privacy() {
   return (
     <div className="min-h-screen bg-white text-gray-800 dark:bg-black dark:text-gray-100 transition-colors duration-300 px-6 py-16">
       <div className="max-w-4xl mx-auto space-y-6">
+        
         <h1 className="text-4xl font-bold text-emerald-500 mb-4">
           Privacy Policy
         </h1>
+
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          Effective Date: November 2025
+          Last Updated: November 2025
         </p>
 
         <p>
-          This Privacy Policy describes how <strong>Tradestein</strong> (“we”,
-          “us”, or “our”) collects, uses, and protects your information when you
-          use our website (
+          Welcome to <strong>Tradestein</strong>. This Privacy Policy explains
+          how we collect, use, and protect your information when you use our
+          website (
           <a
             href="https://tradestein.world"
+            className="text-emerald-500 hover:underline"
             target="_blank"
             rel="noreferrer"
-            className="text-emerald-500 hover:underline"
           >
             tradestein.world
           </a>
-          ) and app (
+          ) and our web app (
           <a
             href="https://app.tradestein.world"
+            className="text-emerald-500 hover:underline"
             target="_blank"
             rel="noreferrer"
-            className="text-emerald-500 hover:underline"
           >
             app.tradestein.world
           </a>
-          ). We value your privacy and are committed to protecting your personal
-          data.
+          ).  
+          <br />
+          Tradestein is a free psychology-focused trading journal, and we are
+          committed to keeping your personal data safe and secure.
         </p>
 
+        {/* 1. Information We Collect */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
             1. Information We Collect
           </h2>
-          <p>
-            We collect minimal personal data necessary to operate and improve
-            our service. This includes:
-          </p>
+
+          <p>We collect only the minimum data needed to operate the app:</p>
+
           <ul className="list-disc ml-6 space-y-1 mt-2">
             <li>
-              <strong>Account Information:</strong> Your email and password
-              required to create and access your account.
+              <strong>Account Information:</strong> Your email address and a
+              password (stored securely using Supabase authentication).
             </li>
             <li>
-              <strong>Usage Data:</strong> Anonymous analytics on how you use
-              Tradestein to help us improve user experience.
+              <strong>Trade Journal Data:</strong> Dates, notes, screenshots, performance data, and psychological inputs you manually add.
             </li>
             <li>
-              <strong>Payment Information:</strong> Processed securely by{" "}
-              <strong>Paddle.com, Lemonsqueezy.com</strong>. We never store your credit card or
-              payment details.
+              <strong>Device & Usage Data:</strong> Anonymous analytics to diagnose issues and improve the app’s performance.
             </li>
           </ul>
         </section>
 
+        {/* 2. How We Use Your Data */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
             2. How We Use Your Information
           </h2>
-          <p>We use your data to:</p>
+
+          <p>Your data is used strictly to operate and enhance Tradestein:</p>
+
           <ul className="list-disc ml-6 space-y-1 mt-2">
-            <li>Provide and maintain your Tradestein account.</li>
+            <li>Allow you to log in and access your trading journal.</li>
+            <li>Store your trades, screenshots, and notes securely.</li>
+            <li>Provide analytics and insights inside the app.</li>
+            <li>Improve the overall user experience.</li>
+            <li>Future optional features (AI insights, monthly reports, mindset coaching).</li>
+          </ul>
+
+          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            We do <strong>not</strong> sell or share your data with third parties.
+          </p>
+        </section>
+
+        {/* 3. Payments (Updated) */}
+        <section>
+          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
+            3. Payments & Donations
+          </h2>
+
+          <p>
+            Tradestein is completely free.  
+            However, users may voluntarily support development through our
+            <strong> Buy Me a Coffee </strong> page.  
+            This is optional, and no financial information is ever stored by us.
+          </p>
+        </section>
+
+        {/* 4. Cookies */}
+        <section>
+          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
+            4. Cookies & Local Storage
+          </h2>
+          <p>We may use:</p>
+          <ul className="list-disc ml-6 space-y-1 mt-2">
+            <li>Local storage for settings (theme, preferences).</li>
+            <li>Session storage for performance and sync optimization.</li>
             <li>
-              Improve functionality, security, and performance of our platform.
+              Minimal cookies for authentication (supabase-managed & secure).
             </li>
-            <li>Send occasional service updates and feature announcements.</li>
-            <li>Comply with billing, tax, and legal obligations.</li>
           </ul>
         </section>
 
+        {/* 5. Data Retention */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            3. Payments and Security
+            5. Data Retention & Deletion
           </h2>
-          <p>
-            All payments are securely processed through{" "}
-            <strong>Paddle.com Market Ltd, Lemonsqueezy.com Market Ltd</strong>, which acts as our merchant
-            of record. Paddle handles all credit card information and complies
-            with international PCI-DSS standards. Tradestein never directly
-            stores your financial information.
-          </p>
-        </section>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            4. Cookies and Analytics
-          </h2>
           <p>
-            We may use cookies or local storage to remember your preferences,
-            such as theme settings or login sessions. Anonymous analytics may be
-            collected to measure engagement and improve product experience.
+            We retain your data only while your account is active.  
+            You may request full deletion at any time by emailing:
           </p>
-        </section>
 
-        <section>
-          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            5. Data Retention
-          </h2>
-          <p>
-            We retain your account data as long as your subscription is active.
-            Upon cancellation or request, we delete your account and associated
-            trade data within 30 days, unless legally required to retain it
-            longer.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
-            6. Your Rights
-          </h2>
-          <p>You have the right to:</p>
-          <ul className="list-disc ml-6 space-y-1 mt-2">
-            <li>Access and export your stored data.</li>
-            <li>Request correction or deletion of inaccurate data.</li>
-            <li>Withdraw consent and close your account at any time.</li>
-          </ul>
           <p className="mt-2">
-            To exercise these rights, please email us at{" "}
             <a
               href="mailto:tradesteinjournal@gmail.com"
               className="text-emerald-500 hover:underline"
             >
               tradesteinjournal@gmail.com
             </a>
-            .
+          </p>
+
+          <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
+            Once deleted, your trade data and screenshots cannot be recovered.
           </p>
         </section>
 
+        {/* 6. Your Rights */}
+        <section>
+          <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
+            6. Your Rights
+          </h2>
+
+          <p>You may request at any time to:</p>
+          <ul className="list-disc ml-6 space-y-1 mt-2">
+            <li>Export all your stored journal data.</li>
+            <li>Update or correct account information.</li>
+            <li>Delete your account and all data.</li>
+          </ul>
+        </section>
+
+        {/* 7. Data Transfers */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
             7. International Data Transfers
           </h2>
           <p>
-            Our servers may operate in various regions, including those outside
-            your home country. By using Tradestein, you consent to transferring
-            your data to these regions where data protection laws may differ.
+            Tradestein is powered by Supabase, which may store encrypted data in
+            data centers inside or outside your region.  
+            By using the app, you consent to these secure transfers.
           </p>
         </section>
 
+        {/* 8. Policy Updates */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
             8. Updates to This Policy
           </h2>
           <p>
-            We may update this Privacy Policy to reflect new features or legal
-            requirements. Updates will be posted on this page with a new “Last
-            Updated” date. Continued use of Tradestein means you accept the
-            revised policy.
+            We may update this policy when we add new features.  
+            The updated version will always be posted here.
           </p>
         </section>
 
+        {/* 9. Contact */}
         <section>
           <h2 className="text-2xl font-semibold text-emerald-400 mb-2">
             9. Contact Us
           </h2>
-          <p>
-            If you have any questions or concerns regarding this Privacy Policy,
-            please contact us:
-          </p>
+          <p>If you have questions about this Privacy Policy:</p>
           <p className="mt-2">
             📧{" "}
             <a
-              href="mailto:rodrickrob11@gmail.com"
+              href="mailto:tradesteinjournal@gmail.com"
               className="text-emerald-500 hover:underline"
             >
               tradesteinjournal@gmail.com
             </a>
           </p>
-          <p>🌍 Tradesteinjournal</p>
         </section>
 
         <footer className="pt-10 text-center text-sm text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-800">
-          © 2025 Tradesteinjournal. All rights reserved.
+          © 2025 Tradestein. All rights reserved.
         </footer>
       </div>
     </div>

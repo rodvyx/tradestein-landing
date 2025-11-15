@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
-import { Link } from "react-router-dom"; // ✅ Import React Router Link
+import { ArrowRight, Coffee } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -11,47 +11,65 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto max-w-6xl px-4 py-24 sm:py-32 text-center">
+        {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight"
         >
-          Master Your Trading Psychology,{" "}
-          <br className="hidden sm:block" />
-          <span className="text-neon drop-shadow">
-            One Journal Entry at a Time.
-          </span>
+          Build the Mindset of a{" "}
+          <span className="text-neon drop-shadow">Consistent Trader</span>
         </motion.h1>
 
+        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-6 text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto"
         >
-          Tradestein is a data-driven trading journal designed to help you track,
-          analyze, and improve your Psychology — built by traders, for traders.
+          Your strategy isn’t the problem — your psychology is.
+          Tradestein helps you journal, analyze, and master the mindset that
+          turns traders into professionals. And it’s completely free.
         </motion.p>
 
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="mt-10 flex items-center justify-center gap-4"
+          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
             href="https://app.tradestein.world"
-            className="btn-primary no-underline"
+            className="btn-primary no-underline flex items-center"
           >
-            Launch App <ArrowRight className="ml-2" size={18} />
+            Launch App — Free Forever
+            <ArrowRight className="ml-2" size={18} />
           </a>
 
-          {/* ✅ FIXED: use React Router Link for internal page navigation */}
-          <Link to="/pricing" className="btn-ghost no-underline">
-            View Pricing
-          </Link>
+          <a
+            href="https://buymeacoffee.com/tradesteinjournal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-ghost no-underline flex items-center"
+          >
+            Buy Us a Coffee
+            <Coffee className="ml-2" size={18} />
+          </a>
         </motion.div>
+
+        {/* Social proof / statement */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.4, duration: 0.6 }}
+          className="mt-8 text-sm text-gray-500 max-w-md mx-auto"
+        >
+          Built by traders who understand the journey.  
+          No paywalls. No subscriptions. Just real tools for real growth.
+        </motion.p>
       </div>
     </section>
   );
